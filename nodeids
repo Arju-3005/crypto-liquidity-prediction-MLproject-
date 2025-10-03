@@ -1,0 +1,9 @@
+[
+  "tests/test_data_preprocessing.py::test_handle_missing_values",
+  "tests/test_data_preprocessing.py::test_normalize_features",
+  "tests/test_feature_engineering.py::test_add_liquidity_ratio",
+  "tests/test_feature_engineering.py::test_add_moving_average",
+  "tests/test_feature_engineering.py::test_add_volatility",
+  "tests/test_models.py::test_get_models",
+  "tests/test_pipeline.py::test_train_model"
+]

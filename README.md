@@ -1,71 +1,63 @@
-# Cryptocurrency Liquidity Prediction for Market Stability
-Machine Learning pipeline for predicting cryptocurrency market liquidity to support stability and risk management.
-📌 Project Description
+# 🚀 Cryptocurrency Liquidity Prediction for Market Stability
 
-This project focuses on predicting cryptocurrency liquidity to ensure market stability. Liquidity indicates how easily assets can be bought or sold without major price changes. A lack of liquidity often leads to high volatility and instability.
+## 📌 Project Overview
+Cryptocurrency markets are **highly volatile**, and liquidity plays a crucial role in ensuring **market stability**.  
+In this project, we build a **Machine Learning model** that predicts cryptocurrency **liquidity levels** based on factors like trading volume, volatility, exchange listings, and social media activity.  
 
-We apply machine learning techniques to analyze cryptocurrency data, perform exploratory data analysis (EDA), and build predictive models to estimate liquidity trends.
+The objective is to **detect liquidity crises early** and help traders, investors, and financial institutions make **informed decisions**.  
 
-🚀 Features
-Data preprocessing and cleaning
-Exploratory Data Analysis (EDA) with visualizations
-Machine Learning model training and evaluation
-Pipeline architecture for prediction workflow
-Documentation with HLD, LLD, and Final Report
-(Optional) Deployment using Streamlit/Flask API for live predictions
-📂 Repository Structure
-Crypto-Liquidity-Prediction/
-│── README.md                  
-│── requirements.txt           
-│── setup.py                   
-│── LICENSE                    
-│── .gitignore                 
-├── data/                      
-│   ├── raw/                   
-│   ├── processed/             
-│   └── external/              
-├── notebooks/                 
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_eda.ipynb           
-│   ├── 03_model_training.ipynb
-│   └── 04_evaluation.ipynb    
-├── src/                       
-│   ├── data_preprocessing.py  
-│   ├── eda.py                 
-│   ├── model.py               
-│   └── utils.py               
-├── reports/                   
-│   ├── EDA_Report.pdf         
-│   ├── HLD_Document.pdf       
-│   ├── LLD_Document.pdf       
-│   ├── Pipeline_Architecture.pdf
-│   └── Final_Report.pdf       
-└── deployment/                
-    ├── app.py (Flask/Streamlit app)  
-    └── requirements.txt        
+---
 
-⚙️ Installation
-Clone the repository:
-git clone https://github.com/yourusername/Crypto-Liquidity-Prediction.git
-cd Crypto-Liquidity-Prediction
+## 📊 Problem Statement
+Liquidity refers to the ease with which assets can be bought or sold **without drastically impacting the price**.  
+A lack of liquidity can cause **increased price fluctuations** and **market instability**.  
 
-Install dependencies:
-pip install -r requirements.txt
+This project aims to:  
+- Predict cryptocurrency liquidity using **historical data**  
+- Perform **feature engineering** (moving averages, volatility, liquidity ratios)  
+- Build & evaluate **ML/DL models** for prediction  
+- Deploy a simple **Streamlit/Flask app** for testing predictions  
 
-▶️ Usage
-Run Jupyter notebooks for EDA and model training
-Train the model:
-python src/model.py
+---
 
-Deploy using Streamlit:
+## 📂 Project Structure 
+---
+
+## 🗂️ Dataset
+- **Source:** [Google Drive Dataset (2016-2017)](https://drive.google.com/drive/folders/10BRgPip2Zj_56is3DilJCowjfyT6E9AM)  
+- **Contents:** Historical cryptocurrency price, volume, and trading activity  
+
+---
+
+## 🔧 Steps in Project Development
+1. **Data Collection** – Gather price, volume & liquidity data  
+2. **Data Preprocessing** – Handle missing values, normalize features  
+3. **EDA (Exploratory Data Analysis)** – Identify trends, correlations & distributions  
+4. **Feature Engineering** – Create liquidity features (moving averages, volatility, ratios)  
+5. **Model Selection** – Try ML (Random Forest, XGBoost) & DL (LSTM, GRU) models  
+6. **Model Training & Tuning** – Train & optimize models with hyperparameter tuning  
+7. **Evaluation** – Metrics: RMSE, MAE, R²  
+8. **Deployment** – Local app using **Streamlit/Flask**  
+
+---
+
+## ⚙️ Tech Stack
+- **Programming:** Python (Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch)  
+- **Visualization:** Matplotlib, Seaborn, Plotly  
+- **Deployment:** Streamlit / Flask  
+- **Version Control:** Git, GitHub  
+
+---
+
+## 📈 Results & Insights
+- Feature importance showed **trading volume & volatility** were the strongest predictors  
+- Models tested: **Linear Regression, Random Forest, XGBoost, LSTM**  
+- Best model achieved **R² = XX%**, **RMSE = XX** (to be updated after experiments)  
+
+---
+
+## 🚀 Deployment
+Run the app locally:
+```bash
 streamlit run deployment/app.py
-
-📊 Results
-Visualizations of liquidity trends
-Model performance metrics
-Comparison of different ML algorithms
-📌 Deliverables
-Source Code
-Well-commented Scripts
-Reports: EDA, HLD, LLD, Pipeline, Final Report
-Deployment (optional)
+ 

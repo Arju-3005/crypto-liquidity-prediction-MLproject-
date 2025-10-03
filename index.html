@@ -1,0 +1,16 @@
+<!-- deployment/templates/index.html -->
+{% extends "layout.html" %}
+
+{% block title %}Home - Crypto Liquidity Prediction{% endblock %}
+
+{% block content %}
+<form action="/predict" method="post">
+    <label for="crypto">Select Cryptocurrency:</label>
+    <select name="crypto" id="crypto">
+        <option value="BTC">BTC</option>
+        <option value="ETH">ETH</option>
+    </select>
+    <br><br>
+    <button type="submit">Predict Liquidity</button>
+</form>
+{% endblock %}

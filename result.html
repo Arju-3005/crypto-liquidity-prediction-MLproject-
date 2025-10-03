@@ -1,0 +1,10 @@
+<!-- deployment/templates/result.html -->
+{% extends "layout.html" %}
+
+{% block title %}Prediction Result{% endblock %}
+
+{% block content %}
+<h2>Prediction for {{ crypto }}</h2>
+<p>Predicted Liquidity Index: <strong>{{ liquidity_index }}</strong></p>
+<a href="/">Back to Home</a>
+{% endblock %}
